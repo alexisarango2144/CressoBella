@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contáctanos - Proyecto</title>
+
+    <!--Icons-->
+    <link rel="shortcut icon" href="https://placehold.co/30x30?text=A" type="image/x-icon" />
+
+    <!--Libraries
+Posteriormente librerías como Bootstrap, Normalize, Datatables, etc. 
+-->
+
+    <!--Static CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <!--Logo, nav, búsqueda-->
+        <div class="logoContainer">
+            <a href="../index.html" class="mainLogoLink"><img class="logotipoNav"
+                    src="https://placehold.co/150x80?text=Logotipo" alt="Logotipo del sitio" /></a>
+        </div>
+        <nav class="mainNav">
+            <ul class="navList">
+                <li class="navElement"><a href="../index.html" class="navLink">Inicio</a></li>
+                <li class="navElement"><a href="./productos.html" class="navLink">Productos</a></li>
+                <li class="navElement"><a href="./nosotros.html" class="navLink">Nosotros</a></li>
+                <li class="navElement"><a href="./encuentranos.html" class="navLink">Encuéntranos</a></li>
+                <li class="navElement"><a href="./contacto.html" class="navLink navLinkSelected">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Contenido central de la página-->
+        <section class="contactTitle">
+            <h1>Contáctanos</h1>
+            <h3>En poco tiempo te estaremos contactando</h3>
+        </section>
+
+        <section class="contactFormContainer">
+            <form action="#" class="contactForm">
+                <label for="Nombre">Nombre</label>
+
+                <input type="text" name="Nombre" placeholder="Nombre" />
+
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="Apellido" placeholder="Apellido" />
+
+                <label for="Email">Email</label>
+                <input type="email" name="Email" placeholder="Email" />
+
+                <label for="Mensaje">Mensaje</label>
+                <textarea type="message" name="Mensaje" placeholder="Tu mensaje"></textarea>
+
+                <button type="submit" class="submitButton">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!--Copyright, links, contecto, etc.-->
+        <p>© 2025 All rights reserved. Alexis Herrera.</p>
+        <div class="verticalSeparator"></div>
+        <p>Síguenos en:</p>
+        <div class="socialLinksContainer">
+            <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=W" alt="WhatsApp logo"
+                    class="socialLinkImg" />WhatsApp</a>
+            <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=IG" alt="Instagram logo"
+                    class="socialLinkImg" />Instagram</a>
+            <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=T" alt="TikTok logo"
+                    class="socialLinkImg" />TikTok</a>
+        </div>
+    </footer>
+</body>
+
+</html>
