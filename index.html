@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
   <!--Static CSS-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -42,34 +42,54 @@
         </div>
       </div>
     </nav>
-
-    <!--Logo, nav, búsqueda-->
-
-    <!-- <div class="logoContainer">
-      <a href="./index.html" class="mainLogoLink"><img class="logotipoNav"
-          src="https://placehold.co/150x80?text=Logotipo" alt="Logotipo del sitio" /></a>
-    </div>
-    <nav>
-      <ul class="navList">
-        <li><a href="./index.html" class="navLinkSelected">Inicio</a></li>
-        <li><a href="./pages/productos.html" class="">Productos</a></li>
-        <li><a href="./pages/nosotros.html" class="">Nosotros</a></li>
-        <li><a href="./pages/encuentranos.html" class="">Encuéntranos</a></li>
-        <li><a href="./pages/contacto.html" class="">Contacto</a></li>
-      </ul>
-    </nav> -->
   </header>
 
-  <main class="container">
+  <main class="grid-container main-page-content mv-4">
     <!--Contenido central de la página-->
-    <section class="portadaPrincipal">
-      <div>
-        <img src="https://placehold.co/1800x400?text=Portada+Principal" class="imagenPortada" alt="Portada principal">
-        <h1>Título principal</h1>
+    <section class="main-carousel card">
+      <div id="horizontal-main-carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pixieset.com/30832269/ff1bbf3b7c0b167c0655ac3f614da554-large.jpg"
+              class="d-block w-100 main-carousel-image" alt="Banana Split">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pixieset.com/30832269/6acdf5872b09bde4cf1b74967e6ecee1-large.jpg"
+              class="d-block w-100 main-carousel-image" alt="Cresso Frappe">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pixieset.com/30832269/a9d63e928f7e5c0e0470bab1ef59de5e-large.jpg"
+              class="d-block w-100 main-carousel-image" alt="Malteada especial">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pixieset.com/30832269/1ba2fcbee6b8cb17a05ac52ac52968ad-large.jpg"
+              class="d-block w-100 main-carousel-image" alt="Helado infantil vaca">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#horizontal-main-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#horizontal-main-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
     </section>
 
-    <section class="mainArticles">
+    <section class="main-info">
+      <article>
+        <h1 class="cresso-name">Cresso Bella</h1>
+        <h2> Trabajamos con amor</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam in voluptate atque quidem quod
+          numquam cumque voluptas voluptatum, iure magni soluta qui ut maiores, nisi ratione architecto quisquam enim.
+          Quibusdam aperiam corrupti repellat, minima qui sed. Laudantium fugit, vitae similique odio qui aliquid
+          debitis molestiae ipsa maiores esse voluptas eligendi, omnis quia nesciunt suscipit consequatur laboriosam
+          earum excepturi modi?</p>
+      </article>
+    </section>
+
+    <section class="main-content">
       <article class="informationArticle">
         <h2>Subtítulo 2</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur totam sapiente dolorem quam officiis
@@ -98,7 +118,7 @@
     <p>© 2025 All rights reserved. Alexis Herrera.</p>
     <div class="verticalSeparator"></div>
     <p>Síguenos en: </p>
-    <div class="socialLinksContainer">
+    <div class="socialLinks-container">
       <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=W" alt="WhatsApp logo"
           class="socialLinkImg">WhatsApp</a>
       <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=IG" alt="Instagram logo"
