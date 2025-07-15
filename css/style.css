@@ -66,6 +66,10 @@ main {
     font-weight: 300;
 }
 
+.card {
+    border-radius: 10px;
+}
+
 footer {
     width: 100%;
     display: flex;
@@ -80,9 +84,11 @@ footer {
 
 footer p {
     margin: 5px;
+    width: 90%;
+    text-align: center;
 }
 
-.verticalSeparator {
+.footerSeparator {
     display: block;
     width: 100%;
     height: 1px;
@@ -98,13 +104,14 @@ footer p {
 }
 
 .socialLink {
-    margin: 0 15px;
+    margin: 5px 15px;
     text-decoration: none;
     color: #D6626E;
+    padding: 5px 0;
 }
 
 .socialLinkImg {
-    margin: 0 5px;
+    margin: 5px;
     border: 2px solid #D6626E;
     border-radius: 100%;
 }
@@ -115,6 +122,10 @@ footer p {
 
 .title-area h1 {
     color: #D6626E;
+}
+
+.portadaNosotros h1 {
+    margin: 16px;
 }
 
 .productsContainer {
@@ -153,6 +164,10 @@ footer p {
     background-color: #E09EB2;
 }
 
+.btn-base:active {
+    border: 1px solid #D6626E;
+}
+
 .btn-base:hover {
     background-color: #E8B2C2;
 } 
@@ -161,6 +176,61 @@ footer p {
     border: 1px solid #D6626E;
     color: #D6626E;
 }
+
+.contact-title, .contactFormContainer {
+    width: 90%;
+    padding: 3%;    
+}
+
+.contactFormContainer .btn-base {
+    width: 100%;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.form-input:focus {
+    border: 6px solid #FFE9B1;
+    outline: #FFDD82;
+}
+
+.portadaNosotros {
+    max-width: 100%;
+    padding: 16px;
+}
+
+.portadaNosotros img {
+    max-width: 100%;
+    border: 1px solid #D6626E;
+    border-radius: 10px;
+}
+
+.ourTeam {
+    display: flex;
+    margin: 16px;
+    flex-direction: column;
+}
+
+.profilesContainer img {
+    border: 1px solid #D6626E;
+    border-radius: 100%;
+    max-width: 100px;
+    margin: 16px;
+}
+
+.profilesContainer .profileName {
+    font-size: 1.5rem;
+    color: #D6626E;
+}
+
+/* Se decide hacer uso de los breakpoints de Bootstrap para no diferir en estilos */ 
 
 @media(min-width: 576px) {
     .grid-container {
@@ -186,6 +256,12 @@ footer p {
 
     .main-info {
         width: 40%;
+    }
+
+    .contactFormContainer {
+        width: 75%;
+        padding: 5%;
+        margin-bottom: 5%;
     }
 }
 
