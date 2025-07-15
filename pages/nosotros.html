@@ -8,11 +8,12 @@
   <title>Quiénes somos - Proyecto</title>
 
   <!--Icons-->
-  <link rel="shortcut icon" href="https://placehold.co/30x30?text=A" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
 
-  <!--Libraries
-Posteriormente librerías como Bootstrap, Normalize, Datatables, etc. 
--->
+  <!--Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
   <!--Static CSS-->
   <link rel="stylesheet" href="../css/style.css">
@@ -20,19 +21,26 @@ Posteriormente librerías como Bootstrap, Normalize, Datatables, etc.
 
 <body>
   <header>
-    <!--Logo, nav, búsqueda-->
-    <div class="logoContainer">
-      <a href="../index.html" class="mainLogoLink"><img class="logotipoNav"
-          src="https://placehold.co/150x80?text=Logotipo" alt="Logotipo del sitio" /></a>
-    </div>
-    <nav class="mainNav">
-      <ul class="navList">
-        <li class="navElement"><a href="../index.html" class="navLink">Inicio</a></li>
-        <li class="navElement"><a href="./productos.html" class="navLink">Productos</a></li>
-        <li class="navElement"><a href="./nosotros.html" class="navLink navLinkSelected">Nosotros</a></li>
-        <li class="navElement"><a href="./encuentranos.html" class="navLink">Encuéntranos</a></li>
-        <li class="navElement"><a href="./contacto.html" class="navLink">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/images/logotipo.png" alt="Logotipo CressoBella"
+            class="d-inline-block align-text-top logotipoNav">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link navLinkSelected" aria-current="page" href="../index.html">Inicio</a>
+            <a class="nav-link" href="./productos.html">Productos</a>
+            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            <a class="nav-link" href="./encuentranos.html">Encuentranos</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -107,6 +115,9 @@ Posteriormente librerías como Bootstrap, Normalize, Datatables, etc.
           class="socialLinkImg">TikTok</a>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

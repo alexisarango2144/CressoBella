@@ -56,7 +56,7 @@ main {
     padding: 30px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -78,14 +78,23 @@ footer {
     font-size: 1.15rem
 }
 
+footer p {
+    margin: 5px;
+}
+
 .verticalSeparator {
-    width: 2px;
-    height: 1rem;
+    display: block;
+    width: 100%;
+    height: 1px;
     background-color: #D6626E;
 }
 
-.socialLink-container {
+.socialLinks-container {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
 .socialLink {
@@ -98,6 +107,59 @@ footer {
     margin: 0 5px;
     border: 2px solid #D6626E;
     border-radius: 100%;
+}
+
+.title-area {
+    text-align: center;
+}
+
+.title-area h1 {
+    color: #D6626E;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #D6626E;
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.product h3 {
+    color: #D6626E;
+}
+
+.product p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+}
+
+.btn-base {
+    background-color: #E09EB2;
+}
+
+.btn-base:hover {
+    background-color: #E8B2C2;
+} 
+
+.input-base{
+    border: 1px solid #D6626E;
+    color: #D6626E;
 }
 
 @media(min-width: 576px) {
