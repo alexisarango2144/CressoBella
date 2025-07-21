@@ -1,0 +1,15 @@
+// Usaremos una fuente local siguiendo la documentación de MDN dado que la requerida no se encuentra disponible en Google Fonts
+@font-face {
+    font-family: 'Grunell';
+    src: url('../assets/fonts/Grunell.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+// Importamos una tipografía secundaria de Google Fonts para cumplir con lo requerido
+// Quedará como fuente secundaria font-family: "Noto Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Grunell', 'Noto Sans', sans-serif;
+}

@@ -1,0 +1,53 @@
+.cresso-name {
+    color: #D6626E;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+
+
+.title-area {
+    text-align: center;
+
+    h1 {
+        color: #D6626E;
+    }
+}
+
+.portadaNosotros {
+    h1 {
+        margin: 16px;
+    }
+} 
+
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #D6626E;
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    height: 220px;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        color: #D6626E;
+    }
+
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,45 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #E8B2C2;
+    padding: 20px;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.15rem
+
+    p {
+        margin: 5px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .footerSeparator {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #D6626E;
+    }
+
+    .socialLinks-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .socialLink {
+        margin: 5px 15px;
+        text-decoration: none;
+        color: #D6626E;
+        padding: 5px 0;
+    }
+
+    .socialLinkImg {
+        margin: 5px;
+        border: 2px solid #D6626E;
+        border-radius: 100%;
+    }
+}

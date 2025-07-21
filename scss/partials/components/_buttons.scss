@@ -1,0 +1,12 @@
+.btn-base {
+    background-color: #E09EB2;
+    width: 100%;
+
+    &:active {
+        border: 1px solid #D6626E;
+    }
+
+    &:hover {
+        background-color: #E8B2C2;
+    } 
+}
