@@ -1,18 +1,209 @@
-/* Error: expected ";".
- *   ,
- * 9 | $primary-color: $color-orchid-pink;
- *   |               ^
- *   '
- *   scss\partials\utilities\_variables.scss 9:15  @use
- *   scss\main.scss 2:1                            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a   \2577 \a 9 \2502  $primary-color: $color-orchid-pink;\d\a   \2502                ^\a   \2575 \a   scss\\partials\\utilities\\_variables.scss 9:15  @use\a   scss\\main.scss 2:1                            root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
+
+@font-face {
+  font-family: "Grunell";
+  src: url("../assets/fonts/Grunell.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: "Grunell", "Noto Sans", sans-serif;
+}
+
+header {
+  font-size: 1.25rem;
+}
+
+.navbar {
+  background-color: #E8B2C2;
+  color: #E09EB2;
+}
+.navbar .navbar-toggler {
+  border: 2px solid #D6626E;
+  background-color: white;
+  height: 50px;
+  padding-top: 0.3125rem;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: #E8B2C2;
+}
+.navbar .logotipoNav {
+  box-sizing: border-box;
+  max-height: 60px;
+  background-color: white;
+  border: 2px solid #D6626E;
+  border-radius: 10px;
+}
+.navbar .nav-link:hover {
+  font-size: 1.5rem;
+  color: #D6626E !important;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("../assets/images/menu.png");
+}
+
+.cresso-name {
+  color: #D6626E;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.title-area {
+  text-align: center;
+}
+.title-area h1 {
+  color: #D6626E;
+}
+
+.portadaNosotros h1 {
+  margin: 16px;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid #D6626E;
+  border-radius: 10px;
+  padding: 10px;
+  width: 160px;
+  height: 220px;
+  overflow: hidden;
+}
+.product img {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+.product h3 {
+  color: #D6626E;
+}
+.product p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #E8B2C2;
+  padding: 20px;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.15rem p;
+  font-size-margin: 5px;
+  font-size-width: 90%;
+  font-size-text-align: center;
+}
+footer .footerSeparator {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #D6626E;
+}
+footer .socialLinks-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+footer .socialLink {
+  margin: 5px 15px;
+  text-decoration: none;
+  color: #D6626E;
+  padding: 5px 0;
+}
+footer .socialLinkImg {
+  margin: 5px;
+  border: 2px solid #D6626E;
+  border-radius: 100%;
+}
+
+.btn-base {
+  background-color: #E09EB2;
+  width: 100%;
+}
+.btn-base:active {
+  border: 1px solid #D6626E;
+}
+.btn-base:hover {
+  background-color: #E8B2C2;
+}
+
+.input-base {
+  border: 1px solid #D6626E;
+  color: #D6626E;
+}
+
+.contactFormContainer {
+  width: 100%;
+  padding: 3%;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 10px;
+}
+.form-input:focus {
+  border: 6px solid #FFE9B1;
+  outline: #FFDD82;
+}
+
+main {
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  width: 90%;
+  padding: 3%;
+}
+
+.portadaNosotros {
+  max-width: 100%;
+  padding: 16px;
+}
+.portadaNosotros img {
+  max-width: 100%;
+  border: 1px solid #D6626E;
+  border-radius: 10px;
+}
+
+.ourTeam {
+  display: flex;
+  margin: 16px;
+  flex-direction: column;
+}
+
+.profilesContainer {
+  font-size: 1.5rem;
+  color: #D6626E;
+}
+.profilesContainer img {
+  border: 1px solid #D6626E;
+  border-radius: 100%;
+  max-width: 100px;
+  margin: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
