@@ -1,12 +1,15 @@
+// Importamos variables
+@use '../utilities/variables';
+
 .btn-base {
-    background-color: #E09EB2;
+    background-color: variables.$primary-color;
     width: 100%;
 
     &:active {
-        border: 1px solid #D6626E;
+        border: 1px solid variables.$primary-accent-color;
     }
 
     &:hover {
-        background-color: #E8B2C2;
+        background-color: variables.$secondary-color;
     } 
 }

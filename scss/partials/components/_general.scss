@@ -1,16 +1,19 @@
+// Importamos variables
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+
 .cresso-name {
-    color: #D6626E;
+    color: variables.$primary-accent-color;
     font-size: 3rem;
     font-weight: 300;
 }
-
-
 
 .title-area {
     text-align: center;
 
     h1 {
-        color: #D6626E;
+        color: variables.$primary-accent-color;
     }
 }
 
@@ -21,33 +24,79 @@
 } 
 
 .productsContainer {
-    display: flex;
-    flex-direction: row;
+    @include mixins.flex(row, center, center);
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
 .product {
-    border: 1px solid #D6626E;
+    @include mixins.flex(column, center,center);
+    border: 1px solid variables.$primary-accent-color;
     border-radius: 10px;
     padding: 10px;
-    width: 160px;
-    height: 220px;
+    width: 180px;
+    height: 240px;
     overflow: hidden;
+
+    &:hover {
+        border: 3px solid variables.$tertiary-accent-color;        
+    }
 
     img {
         max-width: 100%;
+        max-height: 50%;
         margin-bottom: 5px;
     }
 
     h3 {
-        color: #D6626E;
+        color: variables.$primary-accent-color;
+        margin-bottom: 0;
     }
 
     p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin-bottom: 15px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        margin-bottom: 0;
+    }
+}
+
+// Estilos generales o del main
+
+main {
+    @include mixins.flex(column, space-between, center);
+    gap: 1rem;
+    padding: 30px 16px;
+}
+
+.contact-title {
+    width: 90%;
+    padding: 3%;    
+}
+
+.portadaNosotros {
+    max-width: 100%;
+    padding: 16px;
+
+    img {
+        max-width: 100%;
+        border: 1px solid variables.$primary-accent-color;
+        border-radius: 10px;
+    }
+}
+
+.ourTeam {
+    @include mixins.flex(column, center, center);
+    margin: 16px;
+}
+
+.profilesContainer {
+    font-size: 1.5rem;
+    color: variables.$primary-accent-color;
+    
+    img {
+        border: 1px solid variables.$primary-accent-color;
+        border-radius: 100%;
+        max-width: 100px;
+        margin: 16px;
     }
 }

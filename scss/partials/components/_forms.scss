@@ -1,6 +1,10 @@
+// Importamos variables
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
 .input-base{
-    border: 1px solid #D6626E;
-    color: #D6626E;
+    border: 1px solid variables.$primary-accent-color;
+    color: variables.$primary-accent-color;
 }
 
 .contactFormContainer {
@@ -18,7 +22,7 @@
     border-radius: 10px;
 
     &:focus {
-        border: 6px solid #FFE9B1;
-        outline: #FFDD82;
+        border: 6px solid variables.$tertiary-color;
+        outline: variables.$tertiary-accent-color;
     }
 }

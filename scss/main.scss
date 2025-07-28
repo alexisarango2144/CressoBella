@@ -13,47 +13,5 @@
 @use './partials/components/forms';
 
 
-// Estilos generales o del main
 
-main {
-    padding: 30px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-title {
-    width: 90%;
-    padding: 3%;    
-}
-
-.portadaNosotros {
-    max-width: 100%;
-    padding: 16px;
-
-    img {
-        max-width: 100%;
-        border: 1px solid #D6626E;
-        border-radius: 10px;
-    }
-}
-
-.ourTeam {
-    display: flex;
-    margin: 16px;
-    flex-direction: column;
-}
-
-.profilesContainer {
-    font-size: 1.5rem;
-    color: #D6626E;
-    
-    img {
-        border: 1px solid #D6626E;
-        border-radius: 100%;
-        max-width: 100px;
-        margin: 16px;
-    }
-}
 

@@ -12,6 +12,7 @@
 }
 body {
   font-family: "Grunell", "Noto Sans", sans-serif;
+  font-size: 1rem;
 }
 
 header {
@@ -19,35 +20,35 @@ header {
 }
 
 .navbar {
-  background-color: #E8B2C2;
-  color: #E09EB2;
+  background-color: #e8b2c2;
+  color: #d6626e;
 }
 .navbar .navbar-toggler {
-  border: 2px solid #D6626E;
+  border: 2px solid #d6626e;
   background-color: white;
   height: 50px;
   padding-top: 0.3125rem;
 }
 .navbar .navbar-toggler:focus {
-  box-shadow: #E8B2C2;
+  box-shadow: #e8b2c2;
 }
 .navbar .logotipoNav {
   box-sizing: border-box;
   max-height: 60px;
   background-color: white;
-  border: 2px solid #D6626E;
+  border: 2px solid #d6626e;
   border-radius: 10px;
 }
 .navbar .nav-link:hover {
   font-size: 1.5rem;
-  color: #D6626E !important;
+  color: #d6626e;
 }
 .navbar .navbar-toggler-icon {
   background-image: url("../assets/images/menu.png");
 }
 
 .cresso-name {
-  color: #D6626E;
+  color: #d6626e;
   font-size: 3rem;
   font-weight: 300;
 }
@@ -56,7 +57,7 @@ header {
   text-align: center;
 }
 .title-area h1 {
-  color: #D6626E;
+  color: #d6626e;
 }
 
 .portadaNosotros h1 {
@@ -66,40 +67,94 @@ header {
 .productsContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 
 .product {
-  border: 1px solid #D6626E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d6626e;
   border-radius: 10px;
   padding: 10px;
-  width: 160px;
-  height: 220px;
+  width: 180px;
+  height: 240px;
   overflow: hidden;
+}
+.product:hover {
+  border: 3px solid #ffdd82;
 }
 .product img {
   max-width: 100%;
+  max-height: 50%;
   margin-bottom: 5px;
 }
 .product h3 {
-  color: #D6626E;
+  color: #d6626e;
+  margin-bottom: 0;
 }
 .product p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 15px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-bottom: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 30px 16px;
+}
+
+.contact-title {
+  width: 90%;
+  padding: 3%;
+}
+
+.portadaNosotros {
+  max-width: 100%;
+  padding: 16px;
+}
+.portadaNosotros img {
+  max-width: 100%;
+  border: 1px solid #d6626e;
+  border-radius: 10px;
+}
+
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+
+.profilesContainer {
+  font-size: 1.5rem;
+  color: #d6626e;
+}
+.profilesContainer img {
+  border: 1px solid #d6626e;
+  border-radius: 100%;
+  max-width: 100px;
+  margin: 16px;
 }
 
 footer {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #E8B2C2;
-  padding: 20px;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #e8b2c2;
+  padding: 20px;
   gap: 10px;
   font-size: 1.15rem p;
   font-size-margin: 5px;
@@ -108,43 +163,44 @@ footer {
 }
 footer .footerSeparator {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 1px;
-  background-color: #D6626E;
+  background-color: #d6626e;
 }
 footer .socialLinks-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   align-content: center;
   text-align: center;
 }
 footer .socialLink {
   margin: 5px 15px;
   text-decoration: none;
-  color: #D6626E;
+  color: #d6626e;
   padding: 5px 0;
 }
 footer .socialLinkImg {
   margin: 5px;
-  border: 2px solid #D6626E;
+  border: 2px solid #d6626e;
   border-radius: 100%;
 }
 
 .btn-base {
-  background-color: #E09EB2;
+  background-color: #e8b2c2;
   width: 100%;
 }
 .btn-base:active {
-  border: 1px solid #D6626E;
+  border: 1px solid #d6626e;
 }
 .btn-base:hover {
-  background-color: #E8B2C2;
+  background-color: #f4d3c8;
 }
 
 .input-base {
-  border: 1px solid #D6626E;
-  color: #D6626E;
+  border: 1px solid #d6626e;
+  color: #d6626e;
 }
 
 .contactFormContainer {
@@ -162,48 +218,8 @@ footer .socialLinkImg {
   border-radius: 10px;
 }
 .form-input:focus {
-  border: 6px solid #FFE9B1;
-  outline: #FFDD82;
-}
-
-main {
-  padding: 30px 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-title {
-  width: 90%;
-  padding: 3%;
-}
-
-.portadaNosotros {
-  max-width: 100%;
-  padding: 16px;
-}
-.portadaNosotros img {
-  max-width: 100%;
-  border: 1px solid #D6626E;
-  border-radius: 10px;
-}
-
-.ourTeam {
-  display: flex;
-  margin: 16px;
-  flex-direction: column;
-}
-
-.profilesContainer {
-  font-size: 1.5rem;
-  color: #D6626E;
-}
-.profilesContainer img {
-  border: 1px solid #D6626E;
-  border-radius: 100%;
-  max-width: 100px;
-  margin: 16px;
+  border: 6px solid #ffe9b1;
+  outline: #ffdd82;
 }
 
 /*# sourceMappingURL=style.css.map */

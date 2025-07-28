@@ -1,11 +1,15 @@
+// Importamos variables
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+
 footer {
+    @include mixins.flex(row, center, center);
+
     width: 100%;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    background-color: #E8B2C2;
+    background-color: variables.$primary-color;
     padding: 20px;
-    justify-content: center;
     gap: 10px;
     font-size: 1.15rem
 
@@ -17,15 +21,13 @@ footer {
 
     .footerSeparator {
         display: block;
-        width: 100%;
+        width: 90%;
         height: 1px;
-        background-color: #D6626E;
+        background-color: variables.$primary-accent-color;
     }
 
     .socialLinks-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include mixins.flex(row, space-between, center);
         align-content: center;
         text-align: center;
     }
@@ -33,13 +35,13 @@ footer {
     .socialLink {
         margin: 5px 15px;
         text-decoration: none;
-        color: #D6626E;
+        color: variables.$primary-accent-color;
         padding: 5px 0;
     }
 
     .socialLinkImg {
         margin: 5px;
-        border: 2px solid #D6626E;
+        border: 2px solid variables.$primary-accent-color;
         border-radius: 100%;
     }
 }
