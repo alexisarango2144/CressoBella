@@ -39,7 +39,8 @@
     overflow: hidden;
 
     &:hover {
-        border: 3px solid variables.$tertiary-accent-color;        
+        border: 3px solid variables.$tertiary-accent-color;  
+        transform: scale(1.125);   
     }
 
     img {
@@ -96,7 +97,15 @@ main {
     img {
         border: 1px solid variables.$primary-accent-color;
         border-radius: 100%;
-        max-width: 100px;
+        max-width: 80px;
         margin: 16px;
+    }
+}
+
+.profile:hover {
+    transform: scale(1.125);
+
+    img {
+        border: 2px solid variables.$tertiary-accent-color;
     }
 }

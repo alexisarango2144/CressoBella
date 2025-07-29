@@ -13,3 +13,14 @@
         background-color: variables.$secondary-color;
     } 
 }
+
+.btn-didi {
+        
+    img {
+        max-width: 200px;
+
+        &:hover {
+            transform: scale(1.125);
+        }
+    }
+}

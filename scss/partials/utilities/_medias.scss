@@ -1,0 +1,51 @@
+@use '../utilities/mixins';
+
+@media(min-width: 576px) {
+    .grid-container {
+        padding: 50px 10%;
+    }
+}
+
+@media(min-width: 768px) {
+    .grid-container {
+        padding: 50px 10%;
+    }
+    
+    main {
+        @include mixins.flex(row, center, flex-start);
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .main-carousel {
+        width: 55%;
+    }
+
+    .main-info {
+        width: 40%;
+    }
+
+    .contactFormContainer {
+        width: 75%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+
+@media(min-width: 992px){
+    .navbar-nav:first-child {
+        margin-left: 30px;
+    }
+
+    .ourTeam {
+        width: 70%;
+        @include mixins.flex(row, center, center);
+        margin: 16px;
+    }
+    
+    .profilesContainer {
+        width: 100%;
+        @include mixins.flex(row, center, center);
+    }
+}

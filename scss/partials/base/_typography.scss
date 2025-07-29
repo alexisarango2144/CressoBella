@@ -1,3 +1,5 @@
+@use '../utilities/variables';
+
 // Usaremos una fuente local siguiendo la documentación de MDN dado que la requerida no se encuentra disponible en Google Fonts
 @font-face {
     font-family: 'Grunell';
@@ -13,4 +15,8 @@
 body {
     font-family: 'Grunell', 'Noto Sans', sans-serif;
     font-size: 1rem;
+}
+
+.primary-text {
+    color: variables.$primary-accent-color;
 }
