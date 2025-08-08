@@ -11,12 +11,31 @@
   font-weight: normal;
 }
 body {
-  font-family: "Grunell", "Noto Sans", sans-serif;
+  font-family: "Noto Sans", "Grunell", sans-serif;
   font-size: 1rem;
+}
+
+.cresso-font, .primary-text, .cresso-name {
+  font-family: "Grunell", "Noto Sans", sans-serif;
+}
+.cresso-font:hover, .primary-text:hover, .cresso-name:hover {
+  animation: bounceIn;
+  animation-duration: 2s;
+}
+
+.cresso-name {
+  color: #d6626e;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 .primary-text {
   color: #d6626e;
+  font-size: 1.375rem;
+}
+
+.secondary-text-color {
+  color: #f4d3c8;
 }
 
 header {
@@ -43,18 +62,15 @@ header {
   border: 2px solid #d6626e;
   border-radius: 10px;
 }
+.navbar .nav-link {
+  font-family: "Grunell", "Noto Sans", sans-serif;
+}
 .navbar .nav-link:hover {
   font-size: 1.5rem;
   color: #d6626e;
 }
 .navbar .navbar-toggler-icon {
   background-image: url("../assets/images/menu.png");
-}
-
-.cresso-name {
-  color: #d6626e;
-  font-size: 3rem;
-  font-weight: 300;
 }
 
 .title-area {
@@ -80,12 +96,12 @@ header {
 .product {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid #d6626e;
   border-radius: 10px;
   padding: 10px;
-  width: 180px;
+  width: 160px;
   height: 240px;
   overflow: hidden;
 }
@@ -95,12 +111,17 @@ header {
 }
 .product img {
   max-width: 100%;
-  max-height: 50%;
+  max-height: 60%;
   margin-bottom: 5px;
+}
+.product img:hover {
+  transform: scale(1.1);
 }
 .product h3 {
   color: #d6626e;
   margin-bottom: 0;
+  font-size: 1.25rem;
+  text-align: center;
 }
 .product p {
   overflow-y: scroll;
@@ -156,6 +177,7 @@ main {
 }
 .profile:hover img {
   border: 2px solid #ffdd82;
+  margin: 8px;
 }
 
 footer {
@@ -198,6 +220,10 @@ footer .socialLinkImg {
   border: 2px solid #d6626e;
   border-radius: 100%;
 }
+footer .copyright-text a {
+  text-decoration: none;
+  color: #d6626e;
+}
 
 .btn-base {
   background-color: #e8b2c2;
@@ -208,6 +234,7 @@ footer .socialLinkImg {
 }
 .btn-base:hover {
   background-color: #f4d3c8;
+  color: #d6626e;
 }
 
 .btn-didi img {
@@ -239,6 +266,63 @@ footer .socialLinkImg {
 .form-input:focus {
   border: 6px solid #ffe9b1;
   outline: #ffdd82;
+}
+
+@media (min-width: 576px) {
+  .grid-container {
+    padding: 50px 5%;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container {
+    padding: 50px 0%;
+  }
+  .mainview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .main-carousel {
+    width: 55%;
+  }
+  .main-info {
+    width: 40%;
+  }
+  .contactFormContainer {
+    width: 75%;
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-nav:first-child {
+    margin-left: 30px;
+  }
+  .ourTeam {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+  }
+  .profilesContainer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

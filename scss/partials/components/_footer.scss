@@ -44,4 +44,11 @@ footer {
         border: 2px solid variables.$primary-accent-color;
         border-radius: 100%;
     }
+
+    .copyright-text {
+        a {
+            text-decoration: none;
+            color: variables.$primary-accent-color;
+        }
+    }
 }

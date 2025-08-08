@@ -13,10 +13,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: 'Grunell', 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', 'Grunell', sans-serif;
     font-size: 1rem;
 }
 
-.primary-text {
+.cresso-font {
+    font-family: 'Grunell', 'Noto Sans', sans-serif;
+    
+    &:hover {
+        animation: bounceIn;
+        animation-duration: 2s;
+    }
+}
+
+.cresso-name {
+    @extend .cresso-font;
     color: variables.$primary-accent-color;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.primary-text {
+    @extend .cresso-font;
+    color: variables.$primary-accent-color;
+    font-size: 1.375rem;
+}
+
+.secondary-text-color {
+    color: variables.$secondary-color;
 }

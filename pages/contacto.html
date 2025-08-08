@@ -5,7 +5,9 @@
     <!--Metadata-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contáctanos - Proyecto</title>
+    <title>Contáctanos - CressoBella</title>
+    <meta name="description" content="¿Tienes preguntas o sugerencias para CressoBella? Contáctanos a través de nuestro formulario o redes sociales. Estamos aquí para escucharte y ayudarte.">
+    <meta name="keywords" content="CressoBella, contacto, servicio al cliente, teléfono, correo electrónico, preguntas, sugerencias, redes sociales, DexterCream">
 
     <!--Icons-->
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
@@ -46,7 +48,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="grid-container">
         <!--Contenido central de la página-->
         <section class="title-area contact-title">
             <h1>¡Ven hablemos!</h1>
@@ -57,24 +59,24 @@
             <form action="#" class="contactForm">
 
                 <div class="mb-3">
-                    <label for="Nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-input input-base" id="exampleInputEmail1"
+                    <label for="Nombre" class="form-label">Tu nombre</label>
+                    <input type="text" class="form-input input-base" id="Nombre"
                         aria-describedby="NombreHelp">
                     <div id="NombreHelp" class="form-text">O como prefieras que te llamemos.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Tu email</label>
-                    <input type="email" class="form-input input-base" id="exampleInputEmail1"
+                    <label for="Email" class="form-label">Tu email</label>
+                    <input type="email" class="form-input input-base" id="Email"
                         aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Deja un mensaje</label>
-                    <textarea class="form-input input-base" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="Mensaje" class="form-label">Déjanos un mensaje</label>
+                    <textarea class="form-input input-base" id="Mensaje" rows="3"></textarea>
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input input-base" id="exampleCheck1" checked>
-                    <label class="form-check-label" for="exampleCheck1">¿Deseas recibir noticias nuestras?</label>
+                    <input type="checkbox" class="form-check-input input-base" id="check-suscripcion" checked>
+                    <label class="form-check-label" for="check-suscripcion">¿Deseas recibir noticias nuestras?</label>
                 </div>
                 <button type="submit" class="btn btn-base">Enviar</button>
             </form>
@@ -85,15 +87,15 @@
         <!--Copyright, links, contacto, etc.-->
         <p>Síguenos en: </p>
         <div class="socialLinks-container">
-            <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=W" alt="WhatsApp logo"
+            <a href="#" class="socialLink" target="_blank"><img src="https://placehold.co/30x30?text=W" alt="WhatsApp logo"
                     class="socialLinkImg">WhatsApp</a>
-            <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=IG" alt="Instagram logo"
+            <a href="https://www.instagram.com/cresso_bella/" class="socialLink" target="_blank"><img src="https://placehold.co/30x30?text=IG" alt="Instagram logo"
                     class="socialLinkImg">Instagram</a>
-            <a href="#" class="socialLink"><img src="https://placehold.co/30x30?text=T" alt="TikTok logo"
+            <a href="#" class="socialLink" target="_blank"><img src="https://placehold.co/30x30?text=T" alt="TikTok logo"
                     class="socialLinkImg">TikTok</a>
         </div>
         <div class="footerSeparator"></div>
-        <p>© 2025 All rights reserved. Alexis Herrera.</p>
+        <p class="secondary-text-color copyright-text">© 2025 All rights reserved. <a href="https://github.com/alexisarango2144" target="_blank">Alexis Herrera</a>.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
