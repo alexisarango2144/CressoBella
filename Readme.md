@@ -1,4 +1,7 @@
-# Curso HTML "PreEntrega1+Herrera"
+# Curso HTML CoderHouse 
+
+# Estado:
+> Entrega final
 
 Yorman Alexis Herrera Arango.
 
@@ -8,14 +11,9 @@ Enlace a [Figma](https://www.figma.com/design/vISIntK33mkicDUjumSwCa/Proyecto?no
 
 > Se dejan capturas del Wireframe en la carpeta `./assets/images` en caso de tener problemas para abrir Wireframe
 
-## Estilos finalizados en el HTML para los archivos 
+## Estilos finalizados en el HTML para todos los archivos 
 
-* Inicio
-* Productos
-* Nosotros
 
 ## ✅ Pendientes : ToDo
 
-* Ajustar los enlaces a redes sociales 
-* Finalizar los estilos de los formularios Contacto
-* Finalizar los estilos de los formularios Login
+* Configurar el formulario de contacto
